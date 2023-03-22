@@ -5,14 +5,15 @@ import 'firebase/compat/storage';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore'; 
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCTAryStP8C2ljE_toyHrEydfoz-vMW0I0",
-  authDomain: "babyfy-store.firebaseapp.com",
-  projectId: "babyfy-store",
-  storageBucket: "babyfy-store.appspot.com",
-  messagingSenderId: "612839747556",
-  appId: "1:612839747556:web:f678905f5fdea9c224e1f1",
-  measurementId: "G-ZW9NR6T0M5"
+  apiKey: "AIzaSyCsRcLwjCHMBWz600yPOGgK8km2zBEsEO0",
+  authDomain: "babyfy23-660c9.firebaseapp.com",
+  projectId: "babyfy23-660c9",
+  storageBucket: "babyfy23-660c9.appspot.com",
+  messagingSenderId: "734517033754",
+  appId: "1:734517033754:web:4d4423ce614b04dcb64aa3",
+  measurementId: "G-YYZ34JSLYG"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
