@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import logo from "./Pictuers/Pink and Purple Minimalist Baby and Toys Logo .png" 
+import logo from "./Pictures/Pink and Purple Minimalist Baby and Toys Logo .png" 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";

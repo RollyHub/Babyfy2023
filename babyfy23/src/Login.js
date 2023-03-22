@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';
-import logo from "./Pictuers/Pink and Purple Minimalist Baby and Toys Logo .png";
+import logo from "./Pictures/Pink and Purple Minimalist Baby and Toys Logo .png";
 import { Link, useHistory } from "react-router-dom"; 
 import { auth } from './firebase';
 
