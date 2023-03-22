@@ -35,6 +35,7 @@ function Payment () {
               <CheckoutProduct
               id={item.id}
               title={item.image}
+              image={item.image}
               price={item.price}
               />
             ))}
