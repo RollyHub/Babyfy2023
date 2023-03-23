@@ -7,6 +7,9 @@ import { Link } from 'react-router-dom';
 function Payment () {
   const[{ basket, user }, dispatch] = useStateValue();
 
+  const stripe = useStripe();
+  const elements = useElements();
+
 
 
   return (
