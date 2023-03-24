@@ -1,9 +1,21 @@
 const functions = require("firebase-functions");
+const express = require('express');
+const cors = require('cors');
+const stripe = require('stripe')('sk_test_51Lk4urGfsSs8fR4RZxHJhA1YE2cMqaAm18dm1GR4JadCH7iDyENbGDSlc8ySu5090x3W7UJKLK4JlSxRcIGevncf00T1q28uP6');
 
-// // Create and deploy your first functions
-// // https://firebase.google.com/docs/functions/get-started
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//   functions.logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+//API
+
+// App config
+const app = express();
+
+// Middlewares
+app.use(cors({ origin: true }));
+app.use(express.json());
+
+// Api routes
+app.get('/', (request, response) => response.status(200).send('hello world'))
+
+// Listen command
+exports.api = functions.https.onRequest(app)
+
+//(http://127.0.0.1:5001/babyfy23-660c9/us-central1/api)
