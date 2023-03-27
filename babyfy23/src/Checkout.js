@@ -9,6 +9,8 @@ import { useStateValue } from "./StateProvider";
 function Checkout() {
   const [{ basket, user }, dispatch] = useStateValue();
 
+  console.log(basket);
+
 return (
   <div className="checkout">
     <div className="cheackout__left">
@@ -18,7 +20,7 @@ return (
       />
     
   <div>
-    <h3>Hello, {user.email}</h3>
+  <h3>Hello, {user && user.email}</h3>
     <h2 className="checkout__title">Your shopping Basket
     </h2>
 
@@ -31,6 +33,7 @@ return (
 
     {basket.map(item => (
       <CheckoutProduct
+      key={item.id}
       id={item.id}
       title={item.title}
       image={item.image}

@@ -15,10 +15,10 @@ function Payment () {
   const stripe = useStripe();
   const elements = useElements();
 
-  const [succeded, setSucceded] = useState(false);
+  const [succeeded, setSucceeded] = useState(false);
   const [processing, setProcessing] = useState("");
   const [error, setError] = useState(null);
-  const [disable, setDisable] = useState(true);
+  const [disabled, setDisabled] = useState(true);
   const [clientSecret, setClientSecret] = useState(true);
 
   useEffect(() => {
@@ -48,17 +48,17 @@ function Payment () {
       }).then(({ paymentIntent}) => {
         //paymentIntent = payment confirmation
 
-        setSucceded(true);
+        setSucceeded(true);
         setError(null)
         setProcessing(false)
 
-        history.replaceState('/orders')
+        history.replace('/orders')
       })
   }
 
   const handleChange = event => {
 
-      setDisable(event.empty);
+      setDisabled(event.empty);
       setError(event.error ? event.error.message : "");
   }
 
@@ -120,7 +120,7 @@ function Payment () {
                             thousandSeparator={true}
                             prefix={"$"}
                         />
-                        <button disable={processing || disable || succeded}>
+                        <button disabled={processing || disabled || succeeded}>
                           <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
                         </button>
                     </div>
