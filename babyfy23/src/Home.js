@@ -2,6 +2,17 @@ import React from 'react'
 import "./Home.css";
 import Trees from "./video/Trees - 24540.mp4"
 import Product from "./Product";
+import Rabitdoll from "./Pictures/snuttefilt.webp";
+import Sängmobil from "./Pictures/sängmobil.webp";
+import Babygym from "./Pictures/Babygym.webp";
+import Babynest from "./Pictures/Babynest.webp";
+import Playtent from "./Pictures/Play tent.webp";
+import Playmat from "./Pictures/Play mat.webp"
+import Dollcarriage from "./Pictures/doll carriage.webp";
+import Bedside from "./Pictures/Bedside.webp";
+import Babywatch from "./Pictures/Babywatch.webp";
+import Babycarrier from "./Pictures/Babycarrier.webp";
+import Amningskudde from "./Pictures/amningkudde.png";
 
 
 function Home() {
@@ -32,39 +43,39 @@ function Home() {
         <div className="home__row">
             <Product 
               id="12736352"
-              title="Snuttefilt"
+              title="Rabbit doll"
               price={29.99}
-              image= "https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg" />
+              image= {Rabitdoll} />
             <Product  
               id="53226743"
               title="Sängmobil"
               price={239.0}
-              image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"    />
+              image={Sängmobil}    />
                 <Product  
               id="53226653"
-              title="Sängmobil"
-              price={239.0}
-              image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"    />
+              title="Babygym"
+              price={339.0}
+              image={Babygym}  />
             
         </div>
 
         <div className="home__row">
             <Product 
                id="2782782"
-               title="Sängmobil"
-               price={239.0}
-               image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg" />
+               title="Babynest"
+               price={219.0}
+               image={Babynest} />
             <Product 
                id="2378283"
-               title="Sängmobil"
-               price={239.0}
-               image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
+               title="Play Tent"
+               price={539.0}
+               image={Playtent}
              />
             <Product
                id="2382382"
-               title="Sängmobil"
-               price={239.0}
-               image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+               title="Play Mat"
+               price={139.0}
+               image={Playmat}
               />
 
         </div>
@@ -72,11 +83,22 @@ function Home() {
         <div className="home__row">
             <Product 
                id="9492922"
-               title="Sängmobil"
-               price={239.0}
-               image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+               title="Doll Carriage"
+               price={339.0}
+               image={Dollcarriage}
              />
-          
+          <Product 
+               id="9492932"
+               title="Bedside"
+               price={459.0}
+               image={Bedside}
+             />
+             <Product 
+               id="9495922"
+               title="Baby Watch"
+               price={439.0}
+               image={Babywatch}
+             />
         </div>
       </div>
     </div>
